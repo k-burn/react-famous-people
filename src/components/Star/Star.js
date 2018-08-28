@@ -18,6 +18,11 @@ class Star extends Component {
         this.setState({ starFact: event.target.value });
     }
 
+    consoleLog =(event) =>{
+        console.log( {starName : event.target.value });
+        
+    }
+
     
 
     render() {
@@ -26,7 +31,7 @@ class Star extends Component {
         <form>
             <input onChange={this.handleChangeName} />
             <input onChange={this.handleChangeFact} />
-            <input type="submit"/>
+            <input type="submit" onClick={this.consoleLog}/>
         </form>
         <br />
         {this.state.starName} {this.state.starFact}
