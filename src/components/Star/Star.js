@@ -19,7 +19,7 @@ class Star extends Component {
     }
 
     consoleLog =(event) =>{
-        console.log( {starName : event.target.value });
+        console.log('hello', this.starName);
         
     }
 
