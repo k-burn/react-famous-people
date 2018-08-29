@@ -19,7 +19,7 @@ class Star extends Component {
     }
 
     consoleLog =(event) =>{
-        console.log('hello', this.starName);
+        console.log('hello', this.state.starName);
         
     }
 
