@@ -28,11 +28,9 @@ class Star extends Component {
     render() {
       return (
         <div>
-        <form>
             <input onChange={this.handleChangeName} />
             <input onChange={this.handleChangeFact} />
-            <input type="submit" onClick={this.consoleLog}/>
-        </form>
+            <button onClick={this.consoleLog}>Submit</button>/>
         <br />
         {this.state.starName} {this.state.starFact}
       </div>
